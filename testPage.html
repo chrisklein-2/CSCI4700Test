@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Test Page</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="template.js"></script> <!-- Linking the external JavaScript file -->
+</head>
+<body>
+    <h1>Template</h1>
+
+<h3>What is the correct way to initialize an integer in C++?</h3>
+    <ol id = "question1">
+      <li>int foo; <button id = "correct" onclick="correct()">Select</button></li>
+      <li>integer foo; <button class = "incorrect" onclick="incorrect()">Select</button></li>
+      <li>number foo; <button class = "incorrect" onclick="incorrect()">Select</button></li>
+      <li>foo; <button class = "incorrect" onclick="incorrect()">Select</button></li>
+    </ol>
+    <p id = "answer"></p>
+
+
+  <h3><p style = "display: inline">How many bytes in </p>
+    <p id = "randomNum" style = "display: inline">x</p>
+    <p style = "display: inline"> integers?</p>
+  </h3>
+  <label for="fillInAnswer">Enter your answer:</label>
+  <input type="text" id="fillInAnswer" name="name">
+  <button id = "blank" onclick="checkIfRight()">Submit</button>
+  <p id = "filledInBlank"></p>
+
+  <h3>Name either way to print something to the terminal in C++.</h3>
+  <label for="helloWorldAnswer">Enter your answer:</label>
+  <input type="text" id="helloWorldAnswer" name="name">
+  <button id = "helloWorld" onclick="checkIfHelloRight()">Submit</button>
+  <p id = "helloWorldCorrect"></p>
+
+
+  <button id="doneButton" onclick="done()">Done</button>
+  <p id = "done"></p>
+
+</body>
+</html>
