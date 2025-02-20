@@ -4,13 +4,13 @@ let numCorrect = 0;
 let questionsAnswered = 0;
 
 function correct() {
-    document.getElementById("answer").innerHTML = "Well done. You are correct!";
+    //document.getElementById("answer").innerHTML = "Well done. You are correct!";
     numCorrect++;
     questionsAnswered++;
     deButton();
 }
 function incorrect() {
-    document.getElementById("answer").innerHTML = "Sorry, that isn't the right answer!";
+    //document.getElementById("answer").innerHTML = "Sorry, that isn't the right answer!";
     questionsAnswered++;
 
     deButton();
@@ -59,15 +59,14 @@ function checkIfRight(){
   let answer = document.getElementById("fillInAnswer").value;
 
   let question = document.getElementById("randomNum").innerHTML;
-  console.log("here1");
 
   if(answer == question*4){
-    document.getElementById("filledInBlank").innerHTML = "Well done. You are correct!";
+    //document.getElementById("filledInBlank").innerHTML = "Well done. You are correct!";
     numCorrect++;
   }
   else {
-    document.getElementById("filledInBlank").innerHTML = "Sorry, that isn't the right answer!";
-
+    //document.getElementById("filledInBlank").innerHTML = "Sorry, that isn't the right answer!";
+    //continue;
   }
 }
 
@@ -81,14 +80,21 @@ function checkIfHelloRight() {
   let correct = 'cout';
 
   if(answer==correct || answer == "printf"){
-    document.getElementById("helloWorldCorrect").innerHTML = "You are correct!";
+   // document.getElementById("helloWorldCorrect").innerHTML = "You are correct!";
     numCorrect++;
   }
   else {
-    document.getElementById("helloWorldCorrect").innerHTML = "You are wrong!";
-
+    //document.getElementById("helloWorldCorrect").innerHTML = "You are wrong!";
+   // continue;
   }
-  console.log(correct, answer);
+
+}
+
+function question4Button(){
+
+  let answer = document.getElementById("question4").value;
+
+  console.log(answer);
 
 }
 
